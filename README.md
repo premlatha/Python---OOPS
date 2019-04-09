@@ -35,13 +35,13 @@
 
 ```
 Class A:
-	a = 1
-	b = 2
+	a = 20
+	b = 40
 	def method(cls):
 		print cls.a
 		print cls.b
 class B:
-	c = 3
+	c = 60
 	def method2(cls):
 		print cls.c
 ```
@@ -56,29 +56,7 @@ def add(a,b):
 	print a+b
 
 #Call add() and pass integer	
-add(5,10)
+add(10,10)
 #Call add() and pass strings
-add("Core","Python")
-```
-
-
-## Some important points
-
->**__init__()** --We can't declare variable in class,So we have written the variable inside a dunder method,i.e __init__(). This method is useful to initialize the variable. Hence, the name 'init'.
-
-
-
-```
-### Example
-class Student(object):
-	def __init__(self):
-		self.name = 'Rishav'
-		self.age = 25
-		self.marks = 88
-	def talk(self):
-		print "Hi I am ",self.name
-		print "My age is ",self.age
-		print "My marks is ",self.marks
-s1  = Student()
-s1.talk()		
+add("Basic","Python")
 ```
